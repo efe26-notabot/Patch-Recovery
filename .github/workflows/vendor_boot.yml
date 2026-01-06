@@ -37,7 +37,7 @@ jobs:
         chmod a+x script2.sh
         ./script2.sh || true
         mkdir output && cd output
-        mv ../r-patched.img r-patched.img
+        mv ../vbmeta.img vendor_boot.img
         tar cvf fastbootd-vendor_boot.tar vendor_boot.img
         md5sum -t fastbootd-vendor_boot.tar >> fastbootd-vendor_boot.tar
         mv fastbootd-vendor_boot.tar fastbootd-vendor_boot.tar.md5
